@@ -52,7 +52,7 @@ RUN set -ex; \
     && apt-get autoremove \
     && rm -rf /var/lib/apt/lists/*
 RUN dpkg-reconfigure locales
-RUN sudo apt-get update && sudo apt-get install virtualbox–6.0
+RUN sudo apt-get update && sudo apt-get install virtualbox–6.1
 RUN sudo apt-get update && sudo apt-get install -y obs-studio
 
 COPY . /app
